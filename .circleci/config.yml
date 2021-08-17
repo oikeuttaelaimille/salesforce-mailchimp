@@ -11,7 +11,7 @@ workflows:
       - deploy:
           filters:
             branches:
-              only: master
+              only: main
           requires:
             - test
 
