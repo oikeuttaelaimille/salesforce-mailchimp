@@ -360,7 +360,7 @@ global class MailchimpAPI {
 
     addHeaders(req);
 
-    if (!operation.hasBody()) {
+    if (operation.hasBody()) {
       req.setBody(operation.getBody());
     }
 
