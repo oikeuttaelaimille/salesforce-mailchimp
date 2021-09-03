@@ -37,8 +37,16 @@ global class MailchimpAPI {
   }
 
   public MailchimpObject getLists() {
+    return getLists(1000, 0); // Maximum value for count is 1000.
+  }
+
+  public MailchimpObject getLists(Integer count, Integer offset) {
     return MailchimpObject.parse(
-      executeRequest(new MailchimpOperation('GET', '/lists'))
+      executeRequest(
+        new MailchimpOperation('GET', '/lists')
+          .addQueryParam('count', String.valueOf(count))
+          .addQueryParam('offset', String.valueOf(offset))
+      )
     );
   }
 
