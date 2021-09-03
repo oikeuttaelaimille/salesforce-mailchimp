@@ -382,7 +382,7 @@ global class MailchimpAPI {
     Integer status = response.getStatusCode();
 
     // Is success:
-    if (status >= 200 || status < 400) {
+    if (status >= 200 && status < 400) {
       return response;
     }
 
