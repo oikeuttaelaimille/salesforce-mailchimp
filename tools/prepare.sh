@@ -17,7 +17,7 @@ if [ ! -z "$PACKAGE_NAME" ]; then
 	echo "Releasing $PACKAGE_NAME@$VERSION.NEXT"
 
 	# Create new package version.
-	PACKAGE=$(sfdx force:package:version:create -p "$PACKAGE_NAME" --installationkeybypass -w 20 -n "$VERSION.NEXT" -t "v$VERSION" -b "$BRANCH" --json)
+	PACKAGE=$(sfdx force:package:version:create -p "$PACKAGE_NAME" --installationkeybypass -w 20 -n "$VERSION.NEXT" -a "$VERSION" -t "v$VERSION" -b "$BRANCH" --json)
 	STATUS="$(echo $PACKAGE | jq '.status')"
 
 	echo "$PACKAGE"
