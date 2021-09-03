@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/oikeuttaelaimille/salesforce-mailchimp/compare/v1.1.0...v1.1.1) (2021-09-03)
+
+
+### Bug Fixes
+
+* error response handling ([24907a0](https://github.com/oikeuttaelaimille/salesforce-mailchimp/commit/24907a0c636cd373535646fcfbdf9bb2952e5fc8))
+
 # [1.1.0](https://github.com/oikeuttaelaimille/salesforce-mailchimp/compare/v1.0.1...v1.1.0) (2021-09-03)
 
 
